@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro'
+import Hero from '../components/Hero.astro'
+import TitleSection from '../components/TitleSection.astro'
+import Briefcase from '../components/Briefcase.astro'
+import Experience from "../components/Experience.astro"
+---
+
+<Layout 
+	title="Porfolio de Ezequiel Murga - Desarrollador y Programador Web con 3 años de experiencia."
+	description="Contrata a Ezequiel para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones únicas."
+	>
+	<main class="px-4">
+		<SectionContainer class="py-16 md:py-36">
+			<Hero>
+			</slot>
+		</Hero>
+		</SectionContainer>
+		<div class="space-y-24">
+			<SectionContainer id="experience">
+				<TitleSection>
+					<Briefcase class="size-8" />
+					Profesional Experience
+				</TitleSection>
+				<Experience />
+			</SectionContainer>
+			
+			<SectionContainer>Projects</SectionContainer>
+			
+			<SectionContainer>About Me</SectionContainer>
+
+		</div>
+	</main>
+</Layout>

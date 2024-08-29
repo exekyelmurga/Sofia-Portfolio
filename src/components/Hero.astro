@@ -1,0 +1,46 @@
+---
+const personalImageAlt = 'Ezequiel Murga'
+import Badge from './Badge.astro'
+import SocialPill from './SocialPill.astro'
+import LinkedInIcon from './icons/LinkedIn.astro'
+import MailIcon from './icons/MailIcon.astro'
+---
+
+<div class=" max-w-xl">
+    <div class="flex gap-4 mb-4 ">
+        <img
+        class="rounded-full shadow-lg size-16"
+        src='../../public/Hero.webp' alt={personalImageAlt}
+        />
+        <a href="https://www.linkedin.com/in/ezequiel-murga-pereyra/"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+        >
+        <Badge>Open to work</Badge>
+        </a>
+    </div>
+    <h1
+        class=" text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+    >
+        Hi, I'm Ezequiel Murga
+    </h1>
+    <p
+        class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    >
+        3 years of experience. 
+        <strong>I'm a Software Engineer scholarship by the Ensign College University at Bachelors of sciences in computer sciences.</strong
+        >
+        From Jujuy, Argentina.
+    </p>
+    <nav class="flex flex-wrap gap-4 mt-8">
+        <SocialPill href="mailto:ezequiel.murga13@gmail.com">
+            <MailIcon class="size-4" />
+            Contact Me
+        </SocialPill>
+        <SocialPill href="https://www.linkedin.com/in/ezequiel-murga-pereyra/">
+            <LinkedInIcon class="size-4" />
+            LinkedIn
+        </SocialPill>
+    </nav>
+</div>

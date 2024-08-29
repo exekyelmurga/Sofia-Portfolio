@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+{
+    date: "November 2023 - July 2024",
+    title: "Data Engineer and Backend Developer",
+    company: "ELVA",
+    description:
+      "I implemented advanced indexing tools to reduce query times from 15 seconds to under 2 seconds. I designed reports, maps, timelines, and percentage graphs using large datasets for business analysis and operational intelligence. I led the automation of continuous integration with partner companies' central servers.",
+  },
+  {
+    date: "November 2022 - November 2023",
+    title: "Full Stack Engineer",
+    company: "The App Master",
+    description:
+      "Migrated a full application to the MERN stack, achieving a 20% performance improvement and a more professional design aligned with the target industry. Led the implementation of REST APIs with Node.js and the integration of cloud databases on Azure.",
+  },
+  {
+    date: "April 2022 - November 2022",
+    title: "Full Stack Engineer",
+    company: "Artbook.io",
+    description:
+      "Developed a platform for a startup aimed at connecting individuals interested in the art world. Led the project development using the MERN stack.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="">
+                <ExperienceItem {...experience}/>
+            </li>
+        ))
+    }
+</ol>
