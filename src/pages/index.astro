@@ -5,6 +5,8 @@ import Hero from '../components/Hero.astro'
 import TitleSection from '../components/TitleSection.astro'
 import Briefcase from '../components/Briefcase.astro'
 import Experience from "../components/Experience.astro"
+import CodeIcon from '../components/icons/Code.astro'
+import Projects from '../components/Projects.astro'
 ---
 
 <Layout 
@@ -26,7 +28,13 @@ import Experience from "../components/Experience.astro"
 				<Experience />
 			</SectionContainer>
 			
-			<SectionContainer>Projects</SectionContainer>
+			<SectionContainer id="projects">
+				<TitleSection>
+					<CodeIcon class="size-7" />
+					Projects
+				</TitleSection>
+				<Projects />
+			</SectionContainer>
 			
 			<SectionContainer>About Me</SectionContainer>
 
